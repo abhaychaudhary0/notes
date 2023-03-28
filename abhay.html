@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">YOUr NOTEs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://ndtv.in/">Features</a>
+                </li>
+                
+            </ul>
+           
+            
+        </div>
+        <form  class="d-flex mx-5 " role="search">
+            <input class="form-control me-2 " id="searchtxt" type="search " placeholder="Search Notes" aria-label="Search">
+            <button class="btn btn-outline-success float-right" type="submit">Search </button>
+        </form>
+    </nav>
+    <div class="container my-3">
+        <h1 class="text-center">NOTEs</h1>
+        <div class="notecard" >
+            <div class="card-body">
+                <h5 class="card-title">Add A note</h5>
+                <div class="input-group">
+                    <span class="input-group-text"></span>
+                    <textarea class="form-control" id="addtxt" rows="3"></textarea>
+                </div>
+                <button href="#" class="btn btn-primary my-3" id="addbtn">ADD Note</button>
+            </div>
+            <hr>
+            <h1 id="savednotes" class="text-center">SAVED NOTES</h1>
+            <div class="row container-fluid" id="notes">
+                <div class="card my-2 mx-2" style="width: 18rem;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Note</h5>
+                        <p class="card-text">.</p>
+                        <a href="#" class="btn btn-primary">Delete</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app1.js"></script>
+</body>
+
+</html>
